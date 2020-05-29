@@ -13,6 +13,7 @@
 
 @foreach(Client client in Model)
 {
+  //<p>@Html.ActionLink($"{restaurant.Name}", "Details", new { id = restaurant.RestaurantId}) | @Html.ActionLink($"{restaurant.Cuisine.Name}", "Details", "Cuisines", new { id = restaurant.CuisineId} )</p>
   <p>@Html.ActionLink($"{client.ClientName}", "Details", new { id = client.ClientId })</p>
 }
 

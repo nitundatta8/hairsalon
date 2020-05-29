@@ -6,9 +6,9 @@
 
 <h2>Are you sure you want to delete @Html.DisplayFor(model => model.StylistName)?</h2>
 
-<h3>@Html.DisplayNameFor(model => model.StylistName): @Html.DisplayFor(model => model.StylistName)<h3>
-<h3>@Html.DisplayNameFor(model => model.StylistPhoneNum): @Html.DisplayFor(model => model.StylistPhoneNum)<h3>
-<h3>@Html.DisplayNameFor(model => model.Experince): @Html.DisplayFor(model => model.Experince) years<h3>
+<h3>Stylist Name:  @Html.DisplayFor(model => model.StylistName)<h3>
+<h3>Contact Number:  @Html.DisplayFor(model => model.StylistPhoneNum)<h3>
+<h3>Experince:  @Html.DisplayFor(model => model.Experince) years<h3>
 @using (Html.BeginForm())
 {
   <input type="submit" value="Delete" />
