@@ -11,10 +11,13 @@
 
     @Html.LabelFor(model => model.ClientPhoneNum)
     @Html.TextBoxFor(model => model.ClientPhoneNum)
+    
+    @Html.LabelFor(model => model.Stylist)
+    @Html.DropDownList("StylistId")
 
     <br>
-    <input type="submit" value="Add Client" />
+    <input type="submit" value="Add  new client" class="btn btn-default"/>
 }
 
-<p>@Html.ActionLink("Back to Stylists", "Index")</p>
+<p>@Html.ActionLink("show all clients", "Index")</p>
 

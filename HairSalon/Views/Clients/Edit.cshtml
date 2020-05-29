@@ -17,6 +17,9 @@
 
     @Html.LabelFor(model => model.ClientPhoneNum)
     @Html.EditorFor(model => model.ClientPhoneNum)
+    
+    @Html.LabelFor(model => model.Stylist)
+    @Html.DropDownList("StylistId")
 
     <input type="submit" value="Save" />
 }
