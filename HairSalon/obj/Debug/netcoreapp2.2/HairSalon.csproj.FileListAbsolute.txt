@@ -1,0 +1,5 @@
+C:\dev-project\epicodus_code\week-11--database\eau-claire's-salon\HairSalon\obj\Debug\netcoreapp2.2\HairSalon.csprojAssemblyReference.cache
+C:\dev-project\epicodus_code\week-11--database\eau-claire's-salon\HairSalon\obj\Debug\netcoreapp2.2\HairSalon.RazorAssemblyInfo.cache
+C:\dev-project\epicodus_code\week-11--database\eau-claire's-salon\HairSalon\obj\Debug\netcoreapp2.2\HairSalon.RazorAssemblyInfo.cs
+C:\dev-project\epicodus_code\week-11--database\eau-claire's-salon\HairSalon\obj\Debug\netcoreapp2.2\HairSalon.AssemblyInfoInputs.cache
+C:\dev-project\epicodus_code\week-11--database\eau-claire's-salon\HairSalon\obj\Debug\netcoreapp2.2\HairSalon.AssemblyInfo.cs
