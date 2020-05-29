@@ -1,15 +1,16 @@
- @{
+@{
   Layout = "_Layout";
 }
 
 @model HairSalon.Models.Stylist
 
-<h2>Stylist Details</h2> 
-<hr />
+<h2>Are you sure you want to delete @Html.DisplayFor(model => model.StylistName)?</h2>
+
 <h3>@Html.DisplayNameFor(model => model.StylistName): @Html.DisplayFor(model => model.StylistName)<h3>
 <h3>@Html.DisplayNameFor(model => model.StylistPhoneNum): @Html.DisplayFor(model => model.StylistPhoneNum)<h3>
 <h3>@Html.DisplayNameFor(model => model.Experince): @Html.DisplayFor(model => model.Experince) years<h3>
-
-<p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
-<p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId})</p>
-<p>@Html.ActionLink("Back to list", "Index")</p>
+@using (Html.BeginForm())
+{
+  <input type="submit" value="Delete" />
+}
+@Html.ActionLink("Back to List", "Index")
