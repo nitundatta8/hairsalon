@@ -2964,6 +2964,11 @@
       "FilePath": "c:\\dev-project\\epicodus_code\\week-11--database\\eau-claire's-salon\\HairSalon\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\dev-project\\epicodus_code\\week-11--database\\eau-claire's-salon\\HairSalon\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"
