@@ -22,3 +22,6 @@ C:\dev-project\epicodus_code\week-11--database\eau-claire's-salon\HairSalon\obj\
 C:\dev-project\epicodus_code\week-11--database\eau-claire's-salon\HairSalon\obj\Debug\netcoreapp2.2\HairSalon.pdb
 C:\dev-project\epicodus_code\week-11--database\eau-claire's-salon\HairSalon\obj\Debug\netcoreapp2.2\HairSalon.csproj.CopyComplete
 C:\dev-project\epicodus_code\week-11--database\eau-claire's-salon\HairSalon\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+C:\dev-project\epicodus_code\week-11--database\eau-claire's-salon\HairSalon\obj\Debug\netcoreapp2.2\Razor\Views\Stylists\Create.cshtml.g.cs
+C:\dev-project\epicodus_code\week-11--database\eau-claire's-salon\HairSalon\obj\Debug\netcoreapp2.2\Razor\Views\Stylists\Details.cshtml.g.cs
+C:\dev-project\epicodus_code\week-11--database\eau-claire's-salon\HairSalon\obj\Debug\netcoreapp2.2\Razor\Views\Stylists\Index.cshtml.g.cs

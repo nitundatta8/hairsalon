@@ -2961,8 +2961,23 @@
   "RootNamespace": "HairSalon",
   "Documents": [
     {
+      "FilePath": "c:\\dev-project\\epicodus_code\\week-11--database\\eau-claire's-salon\\HairSalon\\Views\\Stylists\\Index.cshtml",
+      "TargetPath": "Views\\Stylists\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\dev-project\\epicodus_code\\week-11--database\\eau-claire's-salon\\HairSalon\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\dev-project\\epicodus_code\\week-11--database\\eau-claire's-salon\\HairSalon\\Views\\Stylists\\Details.cshtml",
+      "TargetPath": "Views\\Stylists\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\dev-project\\epicodus_code\\week-11--database\\eau-claire's-salon\\HairSalon\\Views\\Stylists\\Create.cshtml",
+      "TargetPath": "Views\\Stylists\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
