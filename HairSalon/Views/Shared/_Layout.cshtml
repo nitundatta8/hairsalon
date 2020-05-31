@@ -7,8 +7,36 @@
     <link rel="stylesheet" href="~/css/styles.css">
   </head>
   <body>
+    <!-- Preloader -->
+	<header class="header-area">
+	    <div class="container">
+		    <div class="top-header-area">
+				<div class="top-header-content"><p>Welcome</p></div>
+			</div>
+		</div>
+		<div class="nav-container">
+		    <div class="container">
+			    <div class="topnav">
+				  <a href="">Home</a>
+					<a href="/Stylists">Stylist</a>
+					<a href="">Client</a>
+				</div>
+			</div>
+		
+		</div>
+			
+	</header>
+	<div class="container">
+	    <div class="demo">
+		     <div style="float:left"><img src="img/4.jpg" alt="logo"></div>
+			  <div>@RenderBody()</div>
+		  </div>
+  </div>
+    
+</body>
+  @* <body>
     <div class="box">
       @RenderBody()
     </div>
-  </body>
+  </body> *@
 </html>

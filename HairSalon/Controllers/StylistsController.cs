@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using HairSalon.Models;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 namespace HairSalon.Controllers
 {
@@ -65,6 +66,18 @@ namespace HairSalon.Controllers
       _db.Stylists.Remove(thisStylist);
       _db.SaveChanges();
       return RedirectToAction("Index");
+    }
+    public ActionResult Search()
+    {
+      return View();
+    }
+    [HttpPost]
+    public ActionResult Search(string StylistName)
+    {
+
+      List<Stylist> model = _db.Stylists.Where(stylists => stylists.StylistName.StartsWith(StylistName)).ToList();
+
+      return View("Show", model);
     }
   }
 }
