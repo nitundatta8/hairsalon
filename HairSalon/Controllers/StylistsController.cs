@@ -75,7 +75,7 @@ namespace HairSalon.Controllers
     public ActionResult Search(string StylistName)
     {
 
-      List<Stylist> model = _db.Stylists.Where(stylists => stylists.StylistName.StartsWith(StylistName)).ToList();
+      List<Stylist> model = _db.Stylists.Where(stylists => stylists.StylistName.ToLower().StartsWith(StylistName.ToLower())).ToList();
 
       return View("Show", model);
     }

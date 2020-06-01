@@ -17,17 +17,17 @@
   {
       @Html.LabelFor(model => model.AppointmentDate)
       @Html.TextBoxFor(model => model.AppointmentDate, new {@placeholder  = "12-11-2019"})
-
+      <br>
       @Html.LabelFor(model => model.AppointmentTime)
       @Html.TextBoxFor(model => model.AppointmentTime, new {@placeholder  = "10:00am"})
-    
+      <br>
       @Html.LabelFor(model => model.Client)
       @Html.DropDownList("ClientId")
 
       <br>
-      <input type="submit" value="Add Appointment"/>
+      <input type="submit" value="Add Appointment" class="btn btn-success"/>
   }
 }
 <h3>@Html.ActionLink("Get another Apointment", "Create", "Appointments")</h3>
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
+
 

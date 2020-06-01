@@ -18,10 +18,4 @@
 }
 
 
-@* @foreach(Appointment appointment in Model)
-{
-  <li>@Html.Label("Thank you for choosing us")| @Html.ActionLink($"{appointment.Client.ClientName}", "Details",new { id = appointment.AppointmentId })</li>
-} *@
 
-@* <p>@Html.ActionLink("Add New Stylist", "Create")<h4> @Html.ActionLink("Search Stylist by Name", "Search")</h4> </p> *@
-<p>@Html.ActionLink("Home", "Index", "Home")</p>

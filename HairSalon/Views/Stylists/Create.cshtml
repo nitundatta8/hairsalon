@@ -8,15 +8,15 @@
 {
     @Html.LabelFor(model => model.StylistName)
     @Html.TextBoxFor(model => model.StylistName)
-
+    <br>
     @Html.LabelFor(model => model.StylistPhoneNum)
     @Html.TextBoxFor(model => model.StylistPhoneNum)
-
+    <br>
     @Html.LabelFor(model => model.Experince)
     @Html.TextBoxFor(model => model.Experince)
     <br>
     <input type="submit" value="Add Stylist" />
 }
-<p>@Html.ActionLink("All Clients", "Index", "Clients")</p>
-<p>@Html.ActionLink("Back to Stylists", "Index")</p>
+@* <p>@Html.ActionLink("All Clients", "Index", "Clients")</p> *@
+
 

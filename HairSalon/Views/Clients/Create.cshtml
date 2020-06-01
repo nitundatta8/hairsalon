@@ -8,10 +8,10 @@
 {
     @Html.LabelFor(model => model.ClientName)
     @Html.TextBoxFor(model => model.ClientName)
-
+    <br>
     @Html.LabelFor(model => model.ClientPhoneNum)
     @Html.TextBoxFor(model => model.ClientPhoneNum)
-    
+    <br>
     @Html.LabelFor(model => model.Stylist)
     @Html.DropDownList("StylistId")
 
@@ -19,5 +19,5 @@
     <input type="submit" value="Add  new client"/>
 }
 
-<p>@Html.ActionLink("show all clients", "Index")</p>
+
 
