@@ -54,6 +54,15 @@ CREATE TABLE `clients` (
   `ClientPhoneNum` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`ClientId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `appointments` (
+  `AppointmentId` int NOT NULL AUTO_INCREMENT,
+  `StylistId` int DEFAULT NULL,
+  `ClientId` int DEFAULT NULL,
+  `AppointmentDate` varchar(50) DEFAULT NULL,
+  `AppointmentTime` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`AppointmentId`)
+) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 
 
 4. Press the lightning bolt button to run this command.
