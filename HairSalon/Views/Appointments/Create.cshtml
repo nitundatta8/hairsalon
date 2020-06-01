@@ -5,18 +5,29 @@
 @model HairSalon.Models.Appointment;
 
 
-<h4>Add a new Client</h4>
-@using (Html.BeginForm()) 
-{
-    @Html.LabelFor(model => model.AppointmentDate)
-    @Html.TextBoxFor(model => model.AppointmentDate)
+<h3>New Appointment</h3>
+<h4>Store Hours: 10.00am to 4.00pm</h4>
+  @if(ViewBag.data!=null && ViewBag.data.Count>0)
+  {
+    <h3>Choose different time slot</h3>
+  }
+  else
+  {
+    @using (Html.BeginForm()) 
+  {
+      @Html.LabelFor(model => model.AppointmentDate)
+      @Html.TextBoxFor(model => model.AppointmentDate, new {@placeholder  = "12-11-2019"})
 
-    @Html.LabelFor(model => model.Client)
-    @Html.DropDownList("ClientId")
+      @Html.LabelFor(model => model.AppointmentTime)
+      @Html.TextBoxFor(model => model.AppointmentTime, new {@placeholder  = "10:00am"})
+    
+      @Html.LabelFor(model => model.Client)
+      @Html.DropDownList("ClientId")
 
-    <br>
-    <input type="submit" value="Add Appointment"/>
+      <br>
+      <input type="submit" value="Add Appointment"/>
+  }
 }
-
-<p>@Html.ActionLink("show all clients", "Index")</p>
+<h3>@Html.ActionLink("Get another Apointment", "Create", "Appointments")</h3>
+<p>@Html.ActionLink("Home", "Index", "Home")</p>
 

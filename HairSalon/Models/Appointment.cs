@@ -10,6 +10,7 @@ namespace HairSalon.Models
     public Client Client { get; set; }
     public Stylist Stylist { get; set; }
     public string AppointmentDate { get; set; }
+    public string AppointmentTime { get; set; }
 
 
   }

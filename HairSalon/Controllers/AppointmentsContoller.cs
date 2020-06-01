@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using HairSalon.Models;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 namespace HairSalon.Controllers
 {
@@ -30,9 +31,24 @@ namespace HairSalon.Controllers
     [HttpPost]
     public ActionResult Create(Appointment appointment)
     {
-      _db.Appointments.Add(appointment);
-      _db.SaveChanges();
-      return RedirectToAction("Index");
+      List<Appointment> app = _db.Appointments.Where(appointments => appointments.AppointmentTime == appointment.AppointmentTime &
+      appointments.AppointmentDate == appointment.AppointmentDate &
+      appointments.ClientId == appointment.ClientId).ToList();
+      // // ViewBag.data = app;
+      // Console.WriteLine(ViewBag.data.Count + " ViewBag.data");
+      if (app.Count == 0)
+      {
+        _db.Appointments.Add(appointment);
+        _db.SaveChanges();
+        return RedirectToAction("Index");
+      }
+      else
+      {
+        ViewBag.data = app;
+        ViewBag.ClientId = new SelectList(_db.Clients, "ClientId", "ClientName");
+        return View("Create");
+      }
+
 
 
     }
