@@ -39,6 +39,8 @@ __A web application where the owner is able to add a list of the stylists, and f
 
 CREATE DATABASE `nitun_datta` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
+USE `nitun_datta`
+
 CREATE TABLE `stylists` (
   `StylistId` int NOT NULL AUTO_INCREMENT,
   `StylistName` varchar(255) DEFAULT NULL,
@@ -46,6 +48,7 @@ CREATE TABLE `stylists` (
   `Experince` int DEFAULT NULL,
   PRIMARY KEY (`StylistId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 
 CREATE TABLE `clients` (
   `ClientId` int NOT NULL AUTO_INCREMENT,
